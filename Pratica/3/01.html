@@ -9,18 +9,29 @@
     <link rel="stylesheet" href="css.css">
 </head>
 
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Como você esta ?</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
 
-        <div class="msg">
-            Aqui vai aparecer o horario
+        <div class="">
+            <p>Ano de Nascimento
+                <input type="number" name="" class="hano" id="" min="0">
+            </p>
+            <p>Sexo
+                <input type="radio" name="rad" class="sexo" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="rad" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div class="foto">
-            <img src="IMG/1.jpg" class="img" alt="">
+        <div class="res">
+            Preencha dados acima
         </div>
 
     </section>
