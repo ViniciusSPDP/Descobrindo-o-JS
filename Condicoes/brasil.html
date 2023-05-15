@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Verificador</h1>
+    <input type="text" class="nome" placeholder="Voce nasceu em qual pais"><br>
+    <input type="button" value="Verificar" class="botao"><br>
+    <p class="p"></p>
+</body>
+
+<script>
+    var botao = document.querySelector('.botao')
+    botao.addEventListener('click', clicar)
+
+    function clicar() {
+        var nome = document.querySelector('.nome').value
+
+        if (nome == 'Brasil') {
+            document.querySelector('.p').textContent = `Você nasceu no ${nome} que legal !`
+        } else {
+            document.querySelector('.p').textContent = `Você nasceu no ${nome} você estrangeiro !`
+        }
+    }
+</script>
+
+</html>
